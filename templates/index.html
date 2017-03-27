@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="FairPlanetInvest" content="social impact award" />
+    <meta name="author" content="Rick Warling"  />
+    <link href="assets/css/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="assets/css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FairPlanetInvest</title>
+  </head>
+  <body>
+<!-- Brand and toggle get grouped for better mobile display -->
+    <nav class="navbar navbar-inverse navbar-static-top">
+    <!--<div class="navbar navbar-default"> light navbar-->
+    <!--<div class="navbar navbar-inverse"> dark navbar-->
+    <!--<div class="navbar navbar-inverse navbar-static-top"> navbar is totally at the top-->
+    <!--<div class="navbar navbar-invers navbar-fixed-desktop"> navbar like position fixed-->
+      <div class="container-fluid"> <!--adding -fluid eliminates the padding right and left!-->
+
+
+        <div class="navbar-header">
+
+          <a href="index.html" class="navbar-brand">Tech Site{{now}}</a> <!--gives the title of the navbar-->
+
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navHeaderCollapse">
+            <span class="sr-only">Toggle navigation</span> <!--when clicked on the button the user sees which link he is actually on-->
+            <span class="icon-bar"></span> <!--gives the button 3 lines-->
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+        </div>
+
+<!-- Collect the nav links, forms, and other content for toggling -->
+
+        <div class="collapse navbar-collapse" id="navHeaderCollapse"> <!--navHeaderCollapse is like an ID to make the button when using the website on a mobile phone-->
+  <!--The content here will be only visible if we press that button (on a mobile phone)-->
+    <!--LEFT-side-->
+
+          <ul class="nav navbar-nav navbar-left">
+      <!--list-itmes-->
+              <li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
+              <li><a href="read.html" data-toggle="new" >Blog</a></li>
+
+              <li class="dropdown"</li> <!--makes a dropdown-menu-->
+      <!--dropdown-menu-->
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Social Media <b class="caret"><!--mmakes an arrow--></b></a> <!--must be a href="#"!!-->
+                <ul class="dropdown-menu"> <!--contains all the elements of the dropdown.menu-->
+                  <li><a href="#">Facebook</a></li>
+                  <li><a href="#">Twitter</a></li>
+                  <li><a href="#">Linkedin</a></li>
+                  <li><a href="#">Instagram</a></li>
+                </ul>
+       <!--list-itmes-->
+              <li><a href="#contact" data-toggle="modal">Contact us</a></li> <!--#contact=let the browser know that it opens the link to contact (scroll down)/ data-toggle="modal" =opens here a modal(used also by dropdown-menu with data-toggle="dropdown")/-->
+
+          </ul> <!-- /navbar-left-->
+
+    <!--Right-side-->
+           <ul class="nav navbar-nav navbar-right">
+      <!--Search-field + Submit-->
+            <form class="navbar-form margin-right-left">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search">
+              </div>
+              <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+
+          </ul><!--/navbar-right-->
+
+<!--End of the content which will be only visible if we press that button (on a mobile phone)-->
+        </div><!--/ .navbar-collapse-->
+
+      </div><!--/ .container-fluid-->
+    </nav>
+
+
+
+
+
+<!--making the upper-middle JUMBOTRON-->
+    <section class="container"> <!--makes it responsive-->
+
+      <div class="jumbotron text-center"> <!--jumbotron=takes 12 grides/ text-center=makes the content be alligned in the center-->
+            <h1>Hello, World!</h1>
+            <p>Have tons of labels? Rendering problems can arise when you have dozens of inline labels within a narrow container, each containing its own inline-block element (like an icon). The way around this is setting display: inline-block;. For context and an example, see #13219.</p>
+            <a class="btn btn-default">Watch now!</a>
+            <a class="btn btn-info ">Tweet it!</a> <!--btn-info= makes the button skyblue-->
+      </div>
+
+    </section>
+
+
+
+
+
+<!--creating the middle GRID-SYSTEM-->
+    <section class="container text-center">
+
+      <div class="row">
+
+        <div class="col-md-4"> <!--sm= by small/ md=by medium/ lg=by large/ it still will show the text horizontally-->
+          <h3><a href="#">First column</a></h3>
+          <p>No default class Alerts don't have default classes, only base and modifier classes. A default gray alert doesn't make too much sense, so you're required to specify a type via contextual class. Choose from success, info, warning, or danger. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+          <a href="#" class="btn btn-default">See more!</a>
+        </div>
+        <div class="col-md-4">
+          <h3><a href="#">Second column</a></h3>
+          <p>No default class Alerts don't have default classes, only base and modifier classes. A default gray alert doesn't make too much sense, so you're required to specify a type via contextual class. Choose from success, info, warning, or danger. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+          <a href="#" class="btn btn-default">See more!</a>
+        </div>
+        <div class="col-md-4">
+          <h3><a href="#">Third column</a></h3>
+          <p>No default class Alerts don't have default classes, only base and modifier classes. A default gray alert doesn't make too much sense, so you're required to specify a type via contextual class. Choose from success, info, warning, or danger. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+          <a href="#" class="btn btn-default">See more!</a>
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--footer-fixed-->
+    <footer class="navbar navbar-default navbar-fixed-bottom"> <!--will always stay at the bottom when scrolling-->
+      <div class="container"> <!-- container adds padding=15px right and left-->
+        <p class="navbar-text pull-left">Site built by Rick</p> <!-- navbar-text makes the tet be possition vertically in the middle-->
+        <a href="#" class="navbar-btn btn btn-danger pull-right ">Subscribe on Youtube</a> <!--navbar-btn=creates a button and allignes it vertically in the middle/ btn=general for button/ btn-danger=makes the button red/ pull-right=float-right -->
+
+      </div>
+    </footer>
+
+<!--creating the model for contact/when we create it at the bottom it will load last when someone clicks on the website!-->
+    <div class="modal fade" id="contact" role="dialog"> <!--fade= transition-->
+      <div class="modal-dialog" >
+        <div class="modal-content">
+
+
+
+          <form class="form-horizontal"> <!-- to make it look clean and understand what this code means-->
+            <div class="modal-header">
+              <h4>Contact Tech Site</h4>
+              <div class="modal-body">
+
+                <div class="form-group"> <!--structures the layout the right belongs togehther with th reight element-->
+
+                  <label for="contact-name" class="col-sm-2 control-label">Name:</label> <!-- for="contact-name" = gives a id to this element/ control-label=gives the right styling-->
+                  <div class="col-sm-10"> <!--=text-box-->
+
+                    <input type="text" class="form-control" id="contact-name" placeholder="Full Name" />
+
+                  </div>
+                </div>
+
+                  <div class="form-group"> <!--structures the layout the right belongs togehther with th reight element-->
+
+                    <label for="contact-email" class="col-sm-2 control-label">Email:</label> <!-- for="contact-name" = gives a id to this element/ control-label=gives the right styling-->
+                    <div class="col-sm-10"> <!--=text-box-->
+
+                      <input type="email" class="form-control" id="contact-email" placeholder="you@example.com" />
+
+                    </div>
+                  </div>
+
+                    <div class="form-group"> <!--structures the layout the right belongs togehther with th reight element-->
+
+                      <label for="contact-message" class="col-sm-2 control-label">Name:</label> <!--label gives it styling and looking like a button without being a button, for="contact-name" = gives a id to this element/ control-label=gives the right styling-->
+                      <div class="col-sm-10"> <!--=text-box-->
+
+                        <textarea class="form-control" rows="8"></textarea> <!--form-contrl gives it styling that it fits in the parent-elemnt/ rows=defines the number/height of the text-area-->
+
+                      </div>
+                    </div>
+
+                </div>
+
+              </div>
+              <div class="modal-footer">
+                <a class="btn btn-default" data-dismiss="modal">Close</a> <!--data-dismiss= will close sth, here we close the modal-->
+                <button class="btn btn-primary" type="submit">Send</button> <!--submit makes it clear that this form will be submitted when connected with a php-->
+              </div>
+            </div>
+          </form>
+
+
+        </div>
+      </div>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="assets/css/bootstrap/js/bootstrap.js"></script>
+  </body>
+</html>

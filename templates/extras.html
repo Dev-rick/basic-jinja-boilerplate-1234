@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="Techsite" content="bootstrap" />
+    <meta name="author" content="Rick Warling"  />
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="style.css" /> <!--stylesheet muss unter bootstrap stehen weil html von oben nach unten liest und somit kann man dann mit dieser cssfile Veränderungen vornehmen-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Techsite</title>
+  </head>
+  <body>
+
+
+
+<!-- Breadcrumb=showing the different structures you are currently on-->
+    <div class="container-fluid">
+      <ol class="breadcrumb"> <!--ordened list-->
+        <li><a href="index.html">Home</a></li>
+        <li><a  href="read.html">Blog</a></li>
+        <li class="active">Bootstrap</a></li>
+      </ol>
+    </div>
+
+
+<!--making a carousel/photo gallery-->
+
+    <div id="myCarousel" class="carousel slide"> <!--slide=makes a transition-->
+
+      <ol class="carousel-indicators"> <!-- makes the points to switch from on photo to another-->
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li> <!--data-target=to let the li know to what we are referencing/ data-slide-to="0" ->to which position it goes/active=the first one you screen-->
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner"> <!--the content of the slides-->
+        <div class="item active"> <!--only one can be active-->
+          <img src="img/0.jpg" class="img-responsive featureimg" alt="code0"/> <!--img-responive= makes the img responsive to the screen--->
+          <div class="carousel-caption">
+
+          <div class="panel panel-default panel-transparent">
+            <div class="panel-body">
+                <h3>CSS</h3>
+              <p><small>Cascading Style Sheets (englische Aussprache [kæsˌkeɪdɪŋˈstaɪlʃiːts]; für gestufte Gestaltungsbögen), kurz CSS genannt, ist eine Stylesheet-Sprache für elektronische Dokumente und zusammen mit HTML und DOM eine der Kernsprachen des World Wide Webs.</small></p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+        <div class="item">
+          <img src="img/1.jpg" class="img-responsive featureimg" alt="code1"/> <!--img-responive= makes the img responsive to the screen--->
+          <div class="carousel-caption">
+
+
+                  <div class="panel panel-default panel-transparent">
+                    <div class="panel-body">
+                        <h3>HTML</h3>
+                      <p><small>Die Hypertext Markup Language (englisch für Hypertext-Auszeichnungssprache), abgekürzt HTML, ist eine textbasierte Auszeichnungssprache zur Strukturierung digitaler Dokumente wie Texte mit Hyperlinks, Bildern und anderen Inhalten.</small></p>
+                    </div>
+                  </div>
+
+          </div>
+
+        </div>
+        <div class="item">
+          <img src="img/2.jpg" class="img-responsive featureimg" alt="code2"/> <!--img-responive= makes the img responsive to the screen--->
+          <div class="carousel-caption">
+
+            <div class="panel panel-default panel-transparent"> <!--see for transparent settings in style.css-->
+              <div class="panel-body">
+                  <h3>CODING</h3>
+                <p><small>Programmierung (von altgriechisch πρόγραμμα prógramma „öffentlich und schriftlich bekannt gemachte Nachricht, Befehl“)[1] bezeichnet die Tätigkeit, Computerprogramme zu erstellen.</small></p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+
+<!--buttons on the side-->
+      <a class="carousel-control left" href="#myCarousel" data-slide="prev"> <!--prev enables to slide to the preview/ left= adds a dark hover to the left-->
+         <span class="icon-prev"></span> <!--gives us the little icon-->
+      </a>
+      <a class="carousel-control right" href="#myCarousel" data-slide="next"> <!--next enables to slide to the next/ right= adds a dark hover to the right-->
+         <span class="icon-next"></span> <!--gives us the little icon-->
+      </a>
+
+
+    </div>
+
+
+
+
+
+
+<br />
+
+
+
+
+
+<!--Alert Boxes (green=success)(blue=information) (orange=alert) (red=danger)-->
+    <div class="container"> <!--streches to the full width-->
+      <div class="alert alert-success ">
+        Lorem ipsum dolor
+      </div>
+    </div>
+
+  <!-- can be closed-->
+    <div class="container"> <!--streches to the full width-->
+      <div class="alert alert-danger alert-dismissible">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        Lorem ipsum dolor
+      </div>
+    </div>
+
+
+
+<!--Input Groups (things attached to textboxes) -->
+   <div class="container">
+<!--with  text-addon and one checkbox-->
+
+      <div class="input-group col-sm-3">
+        <span class="input-group-addon">$</span> <!--attached to textbox-->
+        <input type="number" class="form-control" placeholder="enter price" />
+        <span class="input-group-addon">
+          <input type="checkbox" />
+        </span>
+      </div>
+
+
+      <br />
+
+
+   <!--with text-addon and a radio btn-->
+      <div class="input-group input-group-lg"> <!--input-group-lg makes it bigger-->
+        <span class="input-group-addon">$</span><!--attached to textbox-->
+        <input type="text" class="form-control" placeholder="enter price" />
+        <span class="input-group-addon">
+          <input type="radio" />
+        </span>
+      </div>
+
+
+      <br />
+
+
+   <!--with one btn attached to the textfield-->
+      <div class="input-group col-sm-3">
+        <input type="text" class="form-control" placeholder="enter price" />
+        <span class="input-group-btn">
+          <button class="btn btn-primary">search</button>
+        </span>
+      </div>
+
+    </div>
+
+
+
+    <br />
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+  </body>
+</html>

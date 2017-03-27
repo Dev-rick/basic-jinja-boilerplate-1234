@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="Techsite" content="bootstrap" />
+    <meta name="author" content="Rick Warling"  />
+    <link href="assets/css/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="style.css" /> <!--stylesheet muss unter bootstrap stehen weil html von oben nach unten liest und somit kann man dann mit dieser cssfile Veränderungen vornehmen-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Techsite</title>
+  </head>
+  <body>
+<!-- Brand and toggle get grouped for better mobile display -->
+    <nav class="navbar navbar-inverse navbar-static-top">
+    <!--<div class="navbar navbar-default"> light navbar-->
+    <!--<div class="navbar navbar-inverse"> dark navbar-->
+    <!--<div class="navbar navbar-inverse navbar-static-top"> navbar is totally at the top-->
+    <!--<div class="navbar navbar-invers navbar-fixed-desktop"> navbar like position fixed-->
+      <div class="container-fluid"> <!--adding -fluid eliminates the padding right and left!-->
+
+
+        <div class="navbar-header">
+
+          <a href="index.html" class="navbar-brand">Tech Site</a> <!--gives the title of the navbar-->
+
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navHeaderCollapse">
+            <span class="sr-only">Toggle navigation</span> <!--when clicked on the button the user sees which link he is actually on-->
+            <span class="icon-bar"></span> <!--gives the button 3 lines-->
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+        </div>
+
+<!-- Collect the nav links, forms, and other content for toggling -->
+
+        <div class="collapse navbar-collapse" id="navHeaderCollapse"> <!--navHeaderCollapse is like an ID to make the button when using the website on a mobile phone-->
+  <!--The content here will be only visible if we press that button (on a mobile phone)-->
+
+
+
+    <!--LEFT-side-->
+
+          <ul class="nav navbar-nav navbar-left">
+      <!--list-itmes-->
+              <li><a href="index.html">Home</a></li>
+              <li class="active"><a href="read.html">Blog<span class="sr-only">(current)</span></a></li>
+
+              <li class="dropdown"</li> <!--makes a dropdown-menu-->
+      <!--dropdown-menu-->
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Social Media <b class="caret"><!--mmakes an arrow--></b></a> <!--must be a href="#"!!-->
+                <ul class="dropdown-menu"> <!--contains all the elements of the dropdown.menu-->
+                  <li><a href="#">Facebook</a></li>
+                  <li><a href="#">Twitter</a></li>
+                  <li><a href="#">Linkedin</a></li>
+                  <li><a href="#">Instagram</a></li>
+                </ul>
+       <!--list-itmes-->
+              <li><a href="#contact" data-toggle="modal">Contact us</a></li> <!--#contact=let the browser know that it opens the link to contact (scroll down)/ data-toggle="modal" =opens here a modal(used also by dropdown-menu with data-toggle="dropdown")/-->
+
+          </ul> <!-- /navbar-left-->
+
+
+
+    <!--Right-side-->
+           <ul class="nav navbar-nav navbar-right">
+      <!--Search-field + Submit-->
+            <form class="navbar-form margin-right-left">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search">
+              </div>
+              <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+
+          </ul><!--/navbar-right-->
+
+<!--End of the content which will be only visible if we press that button (on a mobile phone)-->
+        </div><!--/ .navbar-collapse-->
+
+      </div><!--/ .container-fluid-->
+    </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- adding a panel-->
+    <div class="container">
+      <div class="row">
+
+
+
+        <div class="col-lg-9">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <div class="page-header">
+                <h3>Blog<small> Posted on 03.03.2017</small></h3>
+              </div>
+              <img class="featuredimg" src="img/twitter-bootstrap.jpg" /> <!--Images in Bootstrap are made responsive with .img-fluid. max-width: 100%; and height: auto; are applied to the image so that it scales with the parent element.-->
+              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+              <h4>A heading</h4>
+              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+              <a href="extras.html"><button class="btn btn-primary">See more bootstrap things!</button></a>
+            </div>
+          </div>
+        </div>
+
+<!-- Creating a sidebar-->
+        <div class="col-lg-3">
+          <div class="list-group">
+            <a href="#" class="list-group-item active">
+              <h4 class="list-group-item-heading">Lorem ipsum</h4>
+              <p class="list-group-item-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            </a>
+            <a href="#" class="list-group-item">
+              <h4 class="list-group-item-heading">Lorem ipsum</h4>
+              <p class="list-group-item-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            </a>
+            <a href="#" class="list-group-item">
+              <h4 class="list-group-item-heading">Lorem ipsum</h4>
+              <p class="list-group-item-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            </a>
+            <a href="#" class="list-group-item">
+              <h4 class="list-group-item-heading">Lorem ipsum</h4>
+              <p class="list-group-item-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            </a>
+            <a href="#" class="list-group-item">
+              <h4 class="list-group-item-heading">Lorem ipsum</h4>
+              <p class="list-group-item-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            </a>
+          </div>
+        </div>
+
+
+
+      </div><!-- row-->
+    </div><!-- container-->
+
+
+
+
+
+
+
+
+
+
+
+
+<!--footer-fixed-->
+    <footer class="navbar navbar-default navbar-fixed-bottom"> <!--will always stay at the bottom when scrolling-->
+      <div class="container"> <!-- container adds padding=15px right and left-->
+        <p class="navbar-text pull-left">Site built by Rick</p> <!-- navbar-text makes the tet be possition vertically in the middle-->
+        <a href="#" class="navbar-btn btn btn-danger pull-right ">Subscribe on Youtube</a> <!--navbar-btn=creates a button and allignes it vertically in the middle/ btn=general for button/ btn-danger=makes the button red/ pull-right=float-right -->
+
+      </div>
+    </footer>
+
+<!--creating the model for contact/when we create it at the bottom it will load last when someone clicks on the website!-->
+<div class="modal fade" id="contact" role="dialog"> <!--fade= transition-->
+  <div class="modal-dialog" >
+    <div class="modal-content">
+
+
+
+      <form class="form-horizontal"> <!-- to make it look clean and understand what this code means-->
+        <div class="modal-header">
+          <h4>Contact Tech Site</h4>
+          <div class="modal-body">
+
+            <div class="form-group"> <!--structures the layout the right belongs togehther with th reight element-->
+
+              <label for="contact-name" class="col-sm-2 control-label">Name:</label> <!-- for="contact-name" = gives a id to this element/ control-label=gives the right styling-->
+              <div class="col-sm-10"> <!--=text-box-->
+
+                <input type="text" class="form-control" id="contact-name" placeholder="Full Name" />
+
+              </div>
+            </div>
+
+              <div class="form-group"> <!--structures the layout the right belongs togehther with th reight element-->
+
+                <label for="contact-email" class="col-sm-2 control-label">Email:</label> <!-- for="contact-name" = gives a id to this element/ control-label=gives the right styling-->
+                <div class="col-sm-10"> <!--=text-box-->
+
+                  <input type="email" class="form-control" id="contact-email" placeholder="you@example.com" />
+
+                </div>
+              </div>
+
+                <div class="form-group"> <!--structures the layout the right belongs togehther with th reight element-->
+
+                  <label for="contact-message" class="col-sm-2 control-label">Name:</label> <!-- for="contact-name" = gives a id to this element/ control-label=gives the right styling-->
+                  <div class="col-sm-10"> <!--=text-box-->
+
+                    <textarea class="form-control" rows="8"></textarea> <!--form-contrl gives it styling that it fits in the parent-elemnt/ rows=defines the number/height of the text-area-->
+
+                  </div>
+                </div>
+
+            </div>
+
+          </div>
+          <div class="modal-footer">
+            <a class="btn btn-default" data-dismiss="modal">Close</a> <!--data-dismiss= will close sth, here we close the modal-->
+            <button class="btn btn-primary" type="submit">Send</button> <!--submit makes it clear that this form will be submitted when connected with a php-->
+          </div>
+        </div>
+      </form>
+
+
+    </div>
+  </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="assets/css/bootstrap/js/bootstrap.js"></script>
+  </body>
+</html>
